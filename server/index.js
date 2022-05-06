@@ -9,7 +9,7 @@ const port = process.env.PORT || 3001;
 
 const cors = require('cors');
 app.use(cors({
-    origin: '*' //https://localhost:3000/'
+    origin: '*'
 }));
 
 app.use(bodyParser.json());

@@ -45,7 +45,7 @@ import '../style/FormContainer.css';
             message: commentText,
             created: timeStamp
         })
-        .then(function (response) {
+        .then(function () {
             addComment({name: name, message: commentText, created: timeStamp});
             setCommentText('');
             setName('');
@@ -56,7 +56,12 @@ import '../style/FormContainer.css';
             console.log(error);
             setHasError(true);
             setErrMessage("An error occured during form submission");
+        })
+        .then(function() {
+            setIsLoading(false);
         });
+
+        
     }
 
     return (
