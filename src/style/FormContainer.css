@@ -1,0 +1,8 @@
+#new-comments {
+    padding: 5px;
+    width: 20%;
+    background-color: lightgreen;
+    color: darkgreen;
+    margin: 0 auto 5px auto;
+    border-radius: 5pz;
+}
